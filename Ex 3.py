@@ -28,9 +28,9 @@ guess += user_query
 
 
 #loop statement to count number of guesses that is equal to chosen random word
-for y in chosen_word:
+for y in range(word_length):
     holding_letter=chosen_word[y]
-    print(f'First guess is, {user_query}, while {y} mystery word is {chosen_word(y)}')
+    print(f'First guess is, {user_query}, while {y} mystery word is {chosen_word[y]}')
     user_query=input(print(f"\n Guess a 'letter' or character making a word. You have {y} guesses remaining"))
     user_query.lower()
     guess+=user_query
