@@ -10,7 +10,9 @@ blanks=[]
 
 for x in range(0,word_length):
     blanks+='_'
-    print(blanks)
+    #print(blanks)
 
 print(f"Hint: Our Mystery Word Is: {random_selector}")
-user_input=print("")
+print((2**5)*'-')
+print(blanks)
+user_input=input(print("Guess the letters making up the mystery word"))
